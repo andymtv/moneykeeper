@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Money Keeper</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- English -->
+    <div class="app">
+        <div class="logo">
+            <span>money</span>
+            keeper
+        </div>
+    <div class="title">
+        Daily budget calculation
+    </div>
+    <div class="main english">
+        <div class="data" id="data">
+            <div class="choose-expenses">Enter required expenses</div>
+            <div class="wrapper">
+                <div class="row">
+                    <input class="expenses-item" type="text" id="expenses_1" placeholder="Name">
+                    <input class="expenses-item" type="text" id="expenses_2" placeholder="Price">
+                </div>
+            
+                <div class="row">
+                    <input class="expenses-item" type="text" id="expenses_3" placeholder="Name">
+                    <input class="expenses-item" type="text" id="expenses_4" placeholder="Price">
+                </div>
+            </div>
+            <button class="creatingNewFieldsBtn">+</button>
+            <button class="expenses-item-btn">Confirm</button>
+            
+            <div class="optionalexpenses">Enter optional expenses</div>
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_1">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_2">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_3">
+            <button class="optionalexpenses-btn">Confirm</button>
+            
+            <div class="count-budget">Daily budget calculation</div>
+            <button class="count-budget-btn">Calculate</button>
+            
+            <div class="choose-income-label">Enter possible earnings separated by commas</div>
+            <input class="choose-income" type="text" id="income">
+            
+            <div class="checksavings">Are you have any savings: 
+                <input id="savings" type="checkbox" />
+            </div>
+            <label for="sum">Sum</label>
+			<input class="choose-sum" id="sum" type="text">
+			<label for="percent">Percent</label>
+            <input class="choose-percent" id="percent" type="text">
+            
+            <div class="open">
+                <button class="start" id="start">Start calculating</button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="result-table">
+                <div class="budget">Income: </div>
+                <div class="budget-value"></div>
+    
+                <div class="daybudget">Daybudget: </div>
+                <div class="daybudget-value"></div>
+    
+                <div class="level">Income level: </div>
+                <div class="level-value"></div>
+    
+                <div class="expenses">Required expenses: </div>
+                <div class="expenses-value"></div>
+    
+                <div class="optionalexpenses">Optional expenses: </div>
+                <div class="optionalexpenses-value"></div>
+    
+                <div class="income">Additional income: </div>
+                <div class="income-value"></div>
+    
+                <div class="monthsavings">Month savings:</div>
+                <div class="monthsavings-value"></div>
+    
+                <div class="yearsavings">Year savings:</div>
+                <div class="yearsavings-value"></div>
+            </div>
+            <div class="time-data">
+                <div class="year">
+                    Year:
+                    <input class="year-value" type="text" readonly>
+                </div>
+                <div class="month">
+                    Month:
+                    <input class="month-value" type="text" readonly>
+                </div>
+                <div class="day">
+                    Day:
+                    <input class="day-value" type="text" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fadeout">
+        <span class="modal-text">To start click on button <br> "Start calculating"</span>
+        <button class="modal-close">Confirm</button>
+    </div>
+
+    <script src="js/main.js"></script>    
+</body>
+</html>
