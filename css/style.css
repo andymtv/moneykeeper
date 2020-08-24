@@ -156,7 +156,7 @@ html {
 }
 
 .data .choose-sum, .data .choose-percent {
-  width: 30%;
+  width: 25%;
   margin: 15px;
 }
 
@@ -319,7 +319,6 @@ html {
     grid-column-start: 1;
     grid-row-start: 2;
     width: 100%;
-    background: #fff;
   }
   .app {
     margin-top: 20px;
